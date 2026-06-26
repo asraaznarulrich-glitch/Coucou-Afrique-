@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coucou Afrique - Bourses & Opportunités</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">Coucou Afrique</div>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Bourses</a>
+      <a href="#">Concours</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Trouvez une bourse en quelques secondes</h1>
+    <p>Bourses, concours et opportunités pour les étudiants africains francophones</p>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Ex: bourse Canada informatique..."/>
+      <button onclick="searchBourses()">Rechercher</button>
+    </div>
+
+    <div class="quick-filters">
+      <button onclick="filter('Canada')">Canada</button>
+      <button onclick="filter('France')">France</button>
+      <button onclick="filter('Erasmus')">Erasmus</button>
+      <button onclick="filter('Afrique')">Afrique</button>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="results">
+    <h2>Résultats</h2>
+    <div id="resultsContainer"></div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Coucou Afrique - Tous droits réservés</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
